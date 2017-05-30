@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Mis Noticias</title>
+		<link rel="stylesheet" href="vendor/css/bootstrap.min.css">
+		<link href="https://fonts.googleapis.com/css?family=Bitter|Khula" rel="stylesheet">
+		<link rel="stylesheet" href="module_noticias/css/style.css">
+	</head>
+
+	<body>
+		
+		<section class="container">
+
+			<h1>Mis Noticias</h1>
+			
+			<section class="a col-md-6">
+
+				<form id="my-form">
+					
+					<div class="form-group">
+						<label for="titulo">Título de la Noticia: </label>
+						<input type="text" id="titulo" class="form-control" placeholder="Título">
+					</div>
+					
+					<div class="form-group">
+						<label for="cuerpo">Cuerpo de la Noticia: </label>
+						<textarea id="cuerpo" class="form-control" placeholder="Cuerpo" rows="9"></textarea>
+					</div>
+
+				</form>
+
+
+				<div class="botonera">
+
+					<button id="agregar-btn" class="btn btn-primary">Agregar Noticia</button>
+					<button id="mostrar-btn" class="btn btn-success">Mostrar Noticias</button>
+					<button id="eliminar-btn" class="btn btn-danger">Eliminar Noticias</button>
+					<button id="ordenar-btn" class="btn btn-warning">Ordenar Noticias</button>
+					
+				</div>
+
+			</section>
+
+			<section class="b col-md-6">
+
+				<div class="contenedor-noticias" id="noticias">
+
+				</div>
+
+			</section>
+
+		</section>
+
+		<script src="vendor/js/jquery-3.2.1.min.js"></script>
+		<script src="module_noticias/js/app.js"></script>
+
+	</body>
+
+</html>
